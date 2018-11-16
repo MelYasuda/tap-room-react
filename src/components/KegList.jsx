@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import Keg from "./Keg";
+import PropTypes from "prop-types";
 
 function KegList(props) {
   return (
-    <div className='row'>
-      <div className="cl-md-12">
+      <div className='row'>
         {props.kegList.map((keg, index) => (
           <Keg
             name={keg.name}
@@ -15,8 +15,15 @@ function KegList(props) {
           />
         ))}
       </div>
-    </div>
   );
 }
 
 export default KegList;
+
+// Ticket.propTypes = {
+//     names: PropTypes.string,
+//     photo: PropTypes.string,
+//     brand: PropTypes.string,
+//     price: PropTypes.number,
+//     abv: PropTypes.number,
+//   };
