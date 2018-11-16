@@ -7,6 +7,18 @@ import { Switch, Route } from 'react-router-dom';
   <Link to="/">Home</Link> | <Link to="/newticket">Create Ticket</Link>
 */
 
+const kegList = [
+{
+  name: '',
+  brand: '',
+  price:'',
+  abv:''
+},
+
+]
+
+
+
 function App(){
   var styles = {
   };
