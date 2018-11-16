@@ -19,11 +19,3 @@ function KegList(props) {
 }
 
 export default KegList;
-
-// Ticket.propTypes = {
-//     names: PropTypes.string,
-//     photo: PropTypes.string,
-//     brand: PropTypes.string,
-//     price: PropTypes.number,
-//     abv: PropTypes.number,
-//   };

@@ -22,10 +22,10 @@ function Keg(props) {
 
 export default Keg;
 
-// Ticket.propTypes = {
-//     names: PropTypes.string,
-//     photo: PropTypes.string,
-//     brand: PropTypes.string,
-//     price: PropTypes.number,
-//     abv: PropTypes.number,
-//   };
+Keg.propTypes = {
+    names: PropTypes.string,
+    photo: PropTypes.string,
+    brand: PropTypes.string,
+    price: PropTypes.number,
+    abv: PropTypes.number,
+  };
