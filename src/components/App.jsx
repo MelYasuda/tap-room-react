@@ -1,6 +1,9 @@
 import React from 'react';
 //import PropTypes from 'prop-types';
 import { Switch, Route } from 'react-router-dom';
+import Header from './Header';
+import bootstrap from "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
 
 /*
   import { Link } from 'react-router-dom';
@@ -9,15 +12,30 @@ import { Switch, Route } from 'react-router-dom';
 
 const kegList = [
 {
-  name: '',
-  brand: '',
-  price:'',
-  abv:''
+  name: 'Hennessy Richard',
+  brand: 'Hennessy',
+  price: 4944,
+  abv: 20
 },
-
+{
+  name: 'Belvedere Vodka',
+  brand: 'Belvedere Vodka',
+  price: 45,
+  abv: 15
+},
+{
+  name: 'Bourbon',
+  brand: 'Breckenridge',
+  price: 450,
+  abv: 40 
+},
+{
+  name: 'Courvoisier VS Cognac',
+  brand: 'Courvoisier',
+  price: 632,
+  abv: 23
+}
 ]
-
-
 
 function App(){
   var styles = {
@@ -27,10 +45,22 @@ function App(){
       <style jsx>{`
         font-family: Helvetica;
       `}</style>
-      tap-room-react
-      {/* <Switch>
-        <Route exact path='/' component={} />
-      </Switch> */}
+      <Header />
+      <Switch>
+        <Route
+          exact
+          path="/"
+          render={props => (
+            <KegList {...props} kegList={kegList} />
+          )}
+        />
+        {/* <Route
+          path="/producelist"
+          render={props => (
+            <ProduceList {...props} availableProduce={availableProduce} />
+          )}
+        /> */}
+      </Switch>
     </div>
   );
 }
